@@ -3,21 +3,30 @@
     <div class="field is-grouped is-grouped-multiline">
       <div class="field has-addons">
         <p class="control">
-          <a class="button is-medium is-primary">
+          <a
+            class="button is-medium"
+            :class="{ 'is-primary': currentState == 'playing' }"
+          >
             <span class="icon">
               <i class="bx bx-play"></i>
             </span>
           </a>
         </p>
         <p class="control">
-          <a class="button is-medium">
+          <a
+            class="button is-medium"
+            :class="{ 'is-primary': currentState == 'playing' }"
+          >
             <span class="icon">
               <i class="bx bx-pause"></i>
             </span>
           </a>
         </p>
         <p class="control">
-          <a class="button is-medium">
+          <a
+            class="button is-medium"
+            :class="{ 'is-primary': currentState == 'stopped' }"
+          >
             <span class="icon">
               <i class="bx bx-stop"></i>
             </span>
